@@ -14,7 +14,7 @@ turbine:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://discovery:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
       
       
 ### 参考：http://blog.csdn.net/liaokailin/article/details/51344281
