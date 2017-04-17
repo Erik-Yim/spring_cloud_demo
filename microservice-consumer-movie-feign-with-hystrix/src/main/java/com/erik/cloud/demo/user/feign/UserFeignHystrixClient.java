@@ -12,7 +12,7 @@ import com.erik.cloud.demo.user.feign.UserFeignHystrixClient.HystrixClientFallba
 
 /**
  * 使用@FeignClient注解的fallback属性，指定fallback类
- * @author eacdy
+ * @author erik
  */
 @FeignClient(name = "microservice-provider-user", fallback = HystrixClientFallback.class)
 public interface UserFeignHystrixClient {
@@ -21,7 +21,7 @@ public interface UserFeignHystrixClient {
 
   /**
    * 这边采取了和Spring Cloud官方文档相同的做法，将fallback类作为内部类放入Feign的接口中，当然也可以单独写一个fallback类。
-   * @author eacdy
+   * @author erik
    */
   @Component
   static class HystrixClientFallback implements UserFeignHystrixClient {

@@ -18,7 +18,7 @@ logging:
     org.hibernate: INFO
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
     org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
-    com.itmuch.youran.persistence: ERROR
+    com.erik.cloud.demo: ERROR
 eureka:
   client:
     serviceUrl:
