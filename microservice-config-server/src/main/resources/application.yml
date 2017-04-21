@@ -8,6 +8,6 @@ spring:
       server:
         git:
           uri: https://github.com/Erik-Yim/spring_cloud_demo/     # 配置git仓库的地址
-          search-paths: config-repo,config-repo2                              # git仓库地址下的相对地址，可以配置多个，用,分割。如果文件名相同则两个都会返回出来，但是客户端用哪一个还是不知道要测试下
+          search-paths: config-repo2,config-repo                  # git仓库地址下的相对地址，可以配置多个，用,分割。如果文件名相同则两个都会返回出来，但是客户端用哪一个还是不知道要测试下
           username: erik_yim@aliyun.com                                          # git仓库的账号
           password: yanjiayang1010                                            # git仓库的密码
