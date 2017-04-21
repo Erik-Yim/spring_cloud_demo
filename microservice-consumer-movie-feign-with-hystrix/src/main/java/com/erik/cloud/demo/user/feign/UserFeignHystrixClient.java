@@ -4,6 +4,7 @@ import com.erik.cloud.demo.user.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -15,6 +16,7 @@ import com.erik.cloud.demo.user.feign.UserFeignHystrixClient.HystrixClientFallba
  * @author erik
  */
 @FeignClient(name = "microservice-provider-user", fallback = HystrixClientFallback.class)
+@Primary //这个注解是有多个实现类时候优先使用这个实现类，和@FeiginClient
 public interface UserFeignHystrixClient {
   @RequestMapping("/{id}")
   public User findByIdFeign(@RequestParam("id") Long id);
