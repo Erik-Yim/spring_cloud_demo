@@ -1,5 +1,5 @@
 erik:
-  name: 严加洋11
-  age: 18 #在spring @Value("${erik.age}")
+  name: 严加洋repo2
+  age: 18repo2 #在spring @Value("${erik.age}")
 
-profile: aaaatest
+profile: aaaatestrepo2
