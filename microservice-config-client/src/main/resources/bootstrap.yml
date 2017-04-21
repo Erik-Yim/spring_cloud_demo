@@ -1,3 +1,7 @@
+management:
+  security:
+    enabled: false
+
 spring:
   application:
     name: microservice-config-client-erik    # 对应microservice-config-server所获取的配置文件的{application}
