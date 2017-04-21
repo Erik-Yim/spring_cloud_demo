@@ -15,8 +15,14 @@ public class ConfigClientController {
   @Value("${profile}")
   private String profile;
 
+  @Value("${erik.name}")
+  private String name;
+
+  @Value("${erik.age}")
+  private String age;
+
   @GetMapping("/hello")
   public String hello() {
-    return this.profile;
+    return "profile = " + this.profile + " name = " + this.name + " age = " + this.age;
   }
 }
