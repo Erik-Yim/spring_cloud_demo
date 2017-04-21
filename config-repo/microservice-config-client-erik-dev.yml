@@ -1,3 +1,5 @@
 erik:
   name: erik_yim
-  age: 22
+  age: 22 #在spring @Value("${erik.age}")
+
+profile: aaaa
