@@ -1,5 +1,0 @@
-erik:
-  name: 严加洋11er
-  age: 1811 #在spring @Value("${erik.age}")
-
-profile: aaaatestcc
