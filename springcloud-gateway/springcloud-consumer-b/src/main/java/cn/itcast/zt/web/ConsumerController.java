@@ -13,6 +13,8 @@ public class ConsumerController {
     @Autowired
     private ServiceBFeignClient serviceBFeignClient;
 
+    //zuul 可以继承Feign 和Ribbon用，因为我再zuul中写了filter需要再http中获取accessToken但是feign不好传这个参数所以就有问题，去掉filter就可以了
+    //但是用ribbon就可以，直接在url中后面拼接accessToken参数
     @RequestMapping("/consumerb")
     public String consumerb(Integer a, Integer b) {
 //        return "ff";
