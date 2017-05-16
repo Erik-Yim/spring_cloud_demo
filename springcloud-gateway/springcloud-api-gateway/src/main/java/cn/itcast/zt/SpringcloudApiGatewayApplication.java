@@ -9,6 +9,9 @@ import org.springframework.context.annotation.Bean;
 /**
  * 参考文章：介绍服务网关，地址绑定以及权限过滤路由
  *
+ *  api给外部调用从api-gateway走，设置权限安全问题，可以保证接口访问看全，
+ *  内部就直接从eureka走就可以了，没必要从api-gateway多走一下
+ *
  * 在filter中集成spring security或者jwt,oauth2等实现保护接口安全访问。
  *
  * http://blog.didispace.com/springcloud5/
